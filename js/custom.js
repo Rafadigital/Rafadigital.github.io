@@ -11,10 +11,9 @@ $(".slick-carousel").slick({
 
 $(document).ready(function(){
     $("#flip").click(function(){
-        $("#panel").slideToggle("slow");
-
+        $('#panel').toggle("slow");
     });
-});
+    });
 
 // button book now
 $(document).ready(function(){
@@ -43,28 +42,27 @@ $('a[href^="#"]').click(function () {
 });
 
 
-// lightbox.option({
-//       'resizeDuration': 200,
-//       'wrapAround': true
-//     })
 
-// var $root = $('html, body');
-// $('a[href^="#"]').click(function () {
-//     $root.animate({
-//         scrollTop: $( $.attr(this, 'href') ).offset().top
-//     }, 900);
+$('.carousel').slick({
+  dots:true,
+});
 
-//     return false;
-// });
 
-// /menu top/ 
+// /maps/
+// function initMap() {
+//         var uluru = {lat: -25.363, lng: 131.044};
+//         var map = new google.maps.Map(document.getElementById('map'), {
+//           zoom: 4,
+//           center: uluru
+//         });
+//         var marker = new google.maps.Marker({
+//           position: uluru,
+//           map: map
+//         });
+//       }
 
-// window.onscroll = function() {scrollFunction()};
 
-// function scrollFunction() {
-//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//         document.getElementById("bs-example-navbar-collapse-1").style.top = "0";
-//     } else {
-//         document.getElementById("bs-example-navbar-collapse-1").style.top = "-50px";
-//     }
-// }
+
+
+
+
